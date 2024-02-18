@@ -17,9 +17,14 @@ pip install -r requirements.txt
 pip install realesrgan
 ```
 
-## 下载模型
+## Download GFPGANv1.3 models
 ```bash
 wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth -P GFPGAN-1.3.8/experiments/pretrained_models
+```
+
+## Download GFPGANv1.4 models
+```bash
+wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth -P GFPGAN-1.3.8/experiments/pretrained_models
 ```
 
 ## 安装pytouch
