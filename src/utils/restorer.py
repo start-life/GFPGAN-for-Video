@@ -11,7 +11,9 @@ class Restorer():
         CURRENT_SCRIPT_PATH = os.path.dirname(os.path.abspath(__file__))
 
         # 模型文件路径
-        model_path = os.path.join(CURRENT_SCRIPT_PATH, '../../gfpgan/weights', 'GFPGANv1.3' + '.pth')
+        model_path = os.path.join(CURRENT_SCRIPT_PATH, '../../gfpgan/weights', 'GFPGANv1.4' + '.pth')
+        if not os.path.exists(model_path):
+           model_path = model_path.replace('GFPGANv1.4', 'GFPGANv1.3')
 
         # 加载模型
         restorer = GFPGANer(
